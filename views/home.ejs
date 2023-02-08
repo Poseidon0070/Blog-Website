@@ -1,0 +1,8 @@
+<%- include("partials/header") -%>
+    <h1>Home</h1>
+    <p><%=content%></p>
+    <%posts.forEach((post)=>{%>
+        <h1><%=post.postTitle%></h1>
+        <p><%=post.postBody%><a href="/post/<%=post.postTitle%>">ReadMore</a></p>
+    <%})%>
+<%- include("partials/footer") -%> 
